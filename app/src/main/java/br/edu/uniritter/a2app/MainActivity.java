@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         postsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent postsInt = new Intent(v.getContext(), Posts.class);
+                Intent postsInt = new Intent(v.getContext(), PostsScreen.class);
                 startActivity(postsInt);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         commentsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent commentsInt = new Intent(v.getContext(), Comments.class);
+                Intent commentsInt = new Intent(v.getContext(), CommentsScreen.class);
                 startActivity(commentsInt);
             }
         });
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         albumsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent albumsInt = new Intent(v.getContext(), Albums.class);
+                Intent albumsInt = new Intent(v.getContext(), AlbumsScreen.class);
                 startActivity(albumsInt);
             }
         });
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         todosBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent todosInt = new Intent(v.getContext(), Todos.class);
+                Intent todosInt = new Intent(v.getContext(), TodosScreen.class);
                 startActivity(todosInt);
             }
         });

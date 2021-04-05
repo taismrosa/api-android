@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.uniritter.a2app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,13 +14,34 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Todos" android:parentActivityName=".MainActivity" />
-        <activity android:name=".Albums" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Comments" android:parentActivityName=".MainActivity" />
-        <activity android:name=".Posts" android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PostsScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PostDetail"
+            android:parentActivityName=".PostsScreen" />
+        <activity
+            android:name=".CommentsScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CommentDetail"
+            android:parentActivityName=".CommentsScreen" />
+        <activity
+            android:name=".AlbumsScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlbumDetail"
+            android:parentActivityName=".AlbumsScreen" />
+        <activity
+            android:name=".TodosScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TodoDetail"
+            android:parentActivityName=".TodosScreen" />
     </application>
 
 </manifest>

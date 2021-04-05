@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">A2 App</string>
+    <string name="app_name">API Android</string>
     <string name="posts">Posts</string>
     <string name="comments">Comments</string>
     <string name="albums">Albums</string>
