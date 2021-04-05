@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A2 App</string>
+    <string name="posts">Posts</string>
+    <string name="comments">Comments</string>
+    <string name="albums">Albums</string>
+    <string name="todos">Todos</string>
+</resources>
